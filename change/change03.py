@@ -39,7 +39,6 @@ class UserData():
 
     def dumptofile(self, outputfile):
         result = "{},{},{:.2f},{:.2f},{:.2f}".format(self.id, self.salary, self.shebao, self.geshui, self.shuihou)
-        print(result)
         with open(outputfile, 'a') as afile:
             afile.write(result)
 
